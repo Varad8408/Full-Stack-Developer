@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/CSS/header.css" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/Sign_up.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>London City</h1>
+            <ul>
+                <li><a class="home" href="home_page.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Attractions</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tower Bridge</a>
+                        <a href="#">Big Ben</a>
+                        <a href="#">London Eye</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Neighborhoods</a>
+                    <div class="dropdown-content">
+                        <a href="#">Westminster</a>
+                        <a href="#">Kensington</a>
+                        <a href="#">Camden</a>
+                    </div>
+                </li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="signin-signup">
+                <a id="signin" href="Sign_in.html">Sign In</a>
+                <a id="signup" class="active" href="Sign_up.html">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <h3>Personal Information</h3>
+        <p>
+            First Name:* <input type="text" name="fname" required /> Last Name:* <input type="text" name="lname"
+                required />
+        </p>
+        <h4>Gender*</h4>
+        <p>Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+            Others <input type="radio" name="gender" id="others" required></p>
+        <p>Address: <textarea name="address" id="address" cols="20" rows="5"></textarea></p>
+        <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+        <p>Email Id:* <input type="email" name="mail" id="mail" required></p>
+        <p>Mobile No.:* <input type="number" name="mobile" id="mobile" required></p>
+
+        <h3>Payment Information</h3>
+        <p>Card Type:* <select name="card" id="card" required>
+                <option value="">Select</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select></p>
+        <p>Card Number* <input type="number" name="card number" id="card number" required></p>
+        <p>Expiry Date* <input type="date" name="expiry date" id="expiry date" required></p>
+        <p>CVV* <input type="password" name="cvv" id="cvv" required></p>
+        <p><input type="submit" value="Pay Now"></p>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 London City Guide. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>

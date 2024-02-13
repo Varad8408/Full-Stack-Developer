@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/CSS/Sign_in.css" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <title>Sign In</title>
+  
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>London City</h1>
+      <ul>
+        <li><a href="home_page.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Attractions</a>
+          <div class="dropdown-content">
+            <a href="#">Tower Bridge</a>
+            <a href="#">Big Ben</a>
+            <a href="#">London Eye</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Neighborhoods</a>
+          <div class="dropdown-content">
+            <a href="#">Westminster</a>
+            <a href="#">Kensington</a>
+            <a href="#">Camden</a>
+          </div>
+        </li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="signin-signup">
+        <a id="signin" class="active" href="Sign_in.html">Sign In</a>
+        <a id="signup" href="Sign_up.html">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <form action="" novalidate>
+    <h1>Contact Us</h1>
+    <label for="name">Name <em>*</em></label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name"/>
+
+    <label for="email">E-mail <em>*</em></label>
+    <input type="email" id="email" name="email" placeholder="Arun123@gmail.com" autocomplete="email" />
+
+    <label for="message">Message <em>*</em></label>
+    <textarea id="message" name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+
+    <p><input type="submit" value="Submit" /></p>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 London City Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script src="/JavaScript/Sign_in.js"></script>
+</body>
+
+</html>
